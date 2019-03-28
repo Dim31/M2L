@@ -1,22 +1,26 @@
 <html>
-<div style="margin-top: 15%"></div>
-<div style="background-color : orange; width: 25%;height: 30%; margin:auto">
-			
-		<div style="width: 100%; text-align: center;">
-							<form action="index.php?uc=utilisateur&action=seconnecter" method="POST"><h1 >Maison des Ligues<span></span></h1>
-							Ton adresse mail : 
-							<input type="text" name="mail" required>
-							<br/><br/>
-							Ton mot de passe : 
-							<input type="text" name="mdp" required>
-							<br/><br/>
-							<a href="">Inscrivez-vous.</a>
-							<br/><br/>
-							<input type="submit" value="Connexion" name="connexion">
-							</form>
-		</div>			
-</div>		
-							
-						
+	<head>
+	</head>
+	<body>
+		<div class="connection">			
+		<form class="col-sm-12" method="post" action="index.php?uc=identification&action=seConnecter">
+         <div class="row justify-content-md-center">
+            <div id="login_card" class="card text-white bg-dark col-sm-8 col-md-4">
+               <div class="card-header text-center">M2L</div>
+
+               <div class="form-group">
+                  <label for="mail"> E-mail : </label>
+                  <input type="text" class="form-control" placeholder="E-mail" name="mail" id="mail" required>
+               </div>
+
+               <div class="form-group">
+                  <label for="password_user"> Mot de passe : </label>
+                  <input type="password" class="form-control" placeholder="Mot de passe" name="password_user" id="password_user" required>
+               </div>
+
+			   <button class="btn btn-info btn-block" type="submit">Se connecter</button>
+			</div>
+      	</form>
+		</div>									
 	</body>
 </html>
